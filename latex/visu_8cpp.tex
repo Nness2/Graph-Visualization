@@ -1,0 +1,263 @@
+\hypertarget{visu_8cpp}{}\section{visu.\+cpp File Reference}
+\label{visu_8cpp}\index{visu.\+cpp@{visu.\+cpp}}
+
+
+Traitement du graphe.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$random$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}affichage.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}visu.\+h\char`\"{}}\newline
+Include dependency graph for visu.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{visu_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ int $>$ \hyperlink{visu_8cpp_abd0c5a20ad8a89156c20efda37a90f94}{vector\+Connexions} (int nalea)
+\begin{DoxyCompactList}\small\item\em Génère la position aléatoirement des noeuds. \end{DoxyCompactList}\item 
+void \hyperlink{visu_8cpp_a4b02b45a77911230876c885a967d3d59}{my\+\_\+delay} (int i)
+\begin{DoxyCompactList}\small\item\em Temporisation de l\textquotesingle{}animation. \end{DoxyCompactList}\item 
+int \hyperlink{visu_8cpp_a165d3a2b6f41d7f3d9b4e56e83c38caa}{test\+Inside} (int x, int y, S\+D\+L\+\_\+\+Surface $\ast$screen)
+\begin{DoxyCompactList}\small\item\em Teste si le noeud est dans l\textquotesingle{}écran. \end{DoxyCompactList}\item 
+int \hyperlink{visu_8cpp_aaa9a2282aca02d1d0240136996bbd589}{proche} (\hyperlink{classnoeud}{noeud} $\ast$n1, \hyperlink{classnoeud}{noeud} $\ast$n2)
+\begin{DoxyCompactList}\small\item\em Teste si deux noeud sont proche l\textquotesingle{}un de l\textquotesingle{}autre. \end{DoxyCompactList}\item 
+void \hyperlink{visu_8cpp_aac465951eaf052e3fff82605ec4292b0}{alg\+Rapprochement} (\hyperlink{classnoeud}{noeud} $\ast$n1, \hyperlink{classnoeud}{noeud} $\ast$n2, S\+D\+L\+\_\+\+Surface $\ast$screen)
+\begin{DoxyCompactList}\small\item\em Fonction se chargent de rapprocher les deux noeuds mis en argument. \end{DoxyCompactList}\item 
+void \hyperlink{visu_8cpp_ad11ef364e45e6bec18158c71e5fa90aa}{alg\+Eloignement\+Proche} (\hyperlink{classnoeud}{noeud} $\ast$n1, \hyperlink{classnoeud}{noeud} $\ast$n2, S\+D\+L\+\_\+\+Surface $\ast$screen)
+\begin{DoxyCompactList}\small\item\em Fonction se chargent d\textquotesingle{}éloigner les deux noeuds mis en argument. \end{DoxyCompactList}\item 
+int \hyperlink{visu_8cpp_a9345b36f8d396752014bbfbad9a5f1de}{attraction} (\hyperlink{classnoeud}{noeud} $\ast$n1, \hyperlink{classnoeud}{noeud} $\ast$n2, S\+D\+L\+\_\+\+Surface $\ast$screen)
+\begin{DoxyCompactList}\small\item\em Calcule l\textquotesingle{}attaction entre deux noeuds. \end{DoxyCompactList}\item 
+int \hyperlink{visu_8cpp_a3e8102cdd5e1c16e0d42dd4d8c5c5beb}{repultion\+Proche} (\hyperlink{classnoeud}{noeud} $\ast$n1, \hyperlink{classnoeud}{noeud} $\ast$n2, S\+D\+L\+\_\+\+Surface $\ast$screen)
+\begin{DoxyCompactList}\small\item\em Calcule la répultion entre deux noeuds. \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{classnoeud}{noeud} $>$ \hyperlink{visu_8cpp_a5ca74eaf1ae9b5ac15cf093a4622e207}{creat\+Graph\+Alea} ()
+\begin{DoxyCompactList}\small\item\em Génère un graphe aléatoire. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{visu_8cpp_aa25372c78da37b42b6be75bd30c265be}\label{visu_8cpp_aa25372c78da37b42b6be75bd30c265be}} 
+vector$<$ \hyperlink{classnoeud}{noeud} $>$ \hyperlink{visu_8cpp_aa25372c78da37b42b6be75bd30c265be}{creat\+Graph} ()
+\begin{DoxyCompactList}\small\item\em Création d\textquotesingle{}un Graphe de teste. \end{DoxyCompactList}\item 
+void \hyperlink{visu_8cpp_a0c98fe54caf74d4a00866bc835d53519}{affiche\+Graph} (vector$<$ \hyperlink{classnoeud}{noeud} $>$ graph, S\+D\+L\+\_\+\+Surface $\ast$screen)
+\begin{DoxyCompactList}\small\item\em Affichage de l\textquotesingle{}interface graphique. \end{DoxyCompactList}\item 
+void \hyperlink{visu_8cpp_a338fd44c440fbc64d7f372b5595be090}{visualisation} (S\+D\+L\+\_\+\+Surface $\ast$$\ast$screen, vector$<$ \hyperlink{classnoeud}{noeud} $>$ $\ast$g)
+\begin{DoxyCompactList}\small\item\em Calcule et mise à jour de l\textquotesingle{}interface graphique. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Traitement du graphe. 
+
+\begin{DoxyAuthor}{Author}
+Aness M\+E\+N\+AA 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{visu_8cpp_a0c98fe54caf74d4a00866bc835d53519}\label{visu_8cpp_a0c98fe54caf74d4a00866bc835d53519}} 
+\index{visu.\+cpp@{visu.\+cpp}!affiche\+Graph@{affiche\+Graph}}
+\index{affiche\+Graph@{affiche\+Graph}!visu.\+cpp@{visu.\+cpp}}
+\subsubsection{\texorpdfstring{affiche\+Graph()}{afficheGraph()}}
+{\footnotesize\ttfamily void affiche\+Graph (\begin{DoxyParamCaption}\item[{vector$<$ \hyperlink{classnoeud}{noeud} $>$}]{graph,  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen }\end{DoxyParamCaption})}
+
+
+
+Affichage de l\textquotesingle{}interface graphique. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen} & Notre écran \\
+\hline
+{\em g} & La liste des noeuds \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{visu_8cpp_ad11ef364e45e6bec18158c71e5fa90aa}\label{visu_8cpp_ad11ef364e45e6bec18158c71e5fa90aa}} 
+\index{visu.\+cpp@{visu.\+cpp}!alg\+Eloignement\+Proche@{alg\+Eloignement\+Proche}}
+\index{alg\+Eloignement\+Proche@{alg\+Eloignement\+Proche}!visu.\+cpp@{visu.\+cpp}}
+\subsubsection{\texorpdfstring{alg\+Eloignement\+Proche()}{algEloignementProche()}}
+{\footnotesize\ttfamily void alg\+Eloignement\+Proche (\begin{DoxyParamCaption}\item[{\hyperlink{classnoeud}{noeud} $\ast$}]{n1,  }\item[{\hyperlink{classnoeud}{noeud} $\ast$}]{n2,  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen }\end{DoxyParamCaption})}
+
+
+
+Fonction se chargent d\textquotesingle{}éloigner les deux noeuds mis en argument. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n1} & Premier noeud \\
+\hline
+{\em n2} & Deuxième noeud \\
+\hline
+{\em screen} & Notre écran \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{visu_8cpp_aac465951eaf052e3fff82605ec4292b0}\label{visu_8cpp_aac465951eaf052e3fff82605ec4292b0}} 
+\index{visu.\+cpp@{visu.\+cpp}!alg\+Rapprochement@{alg\+Rapprochement}}
+\index{alg\+Rapprochement@{alg\+Rapprochement}!visu.\+cpp@{visu.\+cpp}}
+\subsubsection{\texorpdfstring{alg\+Rapprochement()}{algRapprochement()}}
+{\footnotesize\ttfamily void alg\+Rapprochement (\begin{DoxyParamCaption}\item[{\hyperlink{classnoeud}{noeud} $\ast$}]{n1,  }\item[{\hyperlink{classnoeud}{noeud} $\ast$}]{n2,  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen }\end{DoxyParamCaption})}
+
+
+
+Fonction se chargent de rapprocher les deux noeuds mis en argument. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n1} & Premier noeud \\
+\hline
+{\em n2} & Deuxième noeud \\
+\hline
+{\em screen} & Notre écran \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{visu_8cpp_a9345b36f8d396752014bbfbad9a5f1de}\label{visu_8cpp_a9345b36f8d396752014bbfbad9a5f1de}} 
+\index{visu.\+cpp@{visu.\+cpp}!attraction@{attraction}}
+\index{attraction@{attraction}!visu.\+cpp@{visu.\+cpp}}
+\subsubsection{\texorpdfstring{attraction()}{attraction()}}
+{\footnotesize\ttfamily int attraction (\begin{DoxyParamCaption}\item[{\hyperlink{classnoeud}{noeud} $\ast$}]{n1,  }\item[{\hyperlink{classnoeud}{noeud} $\ast$}]{n2,  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen }\end{DoxyParamCaption})}
+
+
+
+Calcule l\textquotesingle{}attaction entre deux noeuds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n1} & Premier noeud \\
+\hline
+{\em n2} & Deuxième noeud \\
+\hline
+{\em screen} & Notre écran \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{visu_8cpp_a5ca74eaf1ae9b5ac15cf093a4622e207}\label{visu_8cpp_a5ca74eaf1ae9b5ac15cf093a4622e207}} 
+\index{visu.\+cpp@{visu.\+cpp}!creat\+Graph\+Alea@{creat\+Graph\+Alea}}
+\index{creat\+Graph\+Alea@{creat\+Graph\+Alea}!visu.\+cpp@{visu.\+cpp}}
+\subsubsection{\texorpdfstring{creat\+Graph\+Alea()}{creatGraphAlea()}}
+{\footnotesize\ttfamily vector$<$\hyperlink{classnoeud}{noeud}$>$ creat\+Graph\+Alea (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Génère un graphe aléatoire. 
+
+\begin{DoxyReturn}{Returns}
+Retourne la liste des positions de chaque noeuds généré aléatoirement 
+\end{DoxyReturn}
+\mbox{\Hypertarget{visu_8cpp_a4b02b45a77911230876c885a967d3d59}\label{visu_8cpp_a4b02b45a77911230876c885a967d3d59}} 
+\index{visu.\+cpp@{visu.\+cpp}!my\+\_\+delay@{my\+\_\+delay}}
+\index{my\+\_\+delay@{my\+\_\+delay}!visu.\+cpp@{visu.\+cpp}}
+\subsubsection{\texorpdfstring{my\+\_\+delay()}{my\_delay()}}
+{\footnotesize\ttfamily void my\+\_\+delay (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Temporisation de l\textquotesingle{}animation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Limite de temps \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{visu_8cpp_aaa9a2282aca02d1d0240136996bbd589}\label{visu_8cpp_aaa9a2282aca02d1d0240136996bbd589}} 
+\index{visu.\+cpp@{visu.\+cpp}!proche@{proche}}
+\index{proche@{proche}!visu.\+cpp@{visu.\+cpp}}
+\subsubsection{\texorpdfstring{proche()}{proche()}}
+{\footnotesize\ttfamily int proche (\begin{DoxyParamCaption}\item[{\hyperlink{classnoeud}{noeud} $\ast$}]{n1,  }\item[{\hyperlink{classnoeud}{noeud} $\ast$}]{n2 }\end{DoxyParamCaption})}
+
+
+
+Teste si deux noeud sont proche l\textquotesingle{}un de l\textquotesingle{}autre. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n1} & Premier noeud à tester \\
+\hline
+{\em n2} & Deuxième noeud à tester \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retourne 1 si noeud 1 est proche de noeud 2 
+\end{DoxyReturn}
+\mbox{\Hypertarget{visu_8cpp_a3e8102cdd5e1c16e0d42dd4d8c5c5beb}\label{visu_8cpp_a3e8102cdd5e1c16e0d42dd4d8c5c5beb}} 
+\index{visu.\+cpp@{visu.\+cpp}!repultion\+Proche@{repultion\+Proche}}
+\index{repultion\+Proche@{repultion\+Proche}!visu.\+cpp@{visu.\+cpp}}
+\subsubsection{\texorpdfstring{repultion\+Proche()}{repultionProche()}}
+{\footnotesize\ttfamily int repultion\+Proche (\begin{DoxyParamCaption}\item[{\hyperlink{classnoeud}{noeud} $\ast$}]{n1,  }\item[{\hyperlink{classnoeud}{noeud} $\ast$}]{n2,  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen }\end{DoxyParamCaption})}
+
+
+
+Calcule la répultion entre deux noeuds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n1} & Premier noeud \\
+\hline
+{\em n2} & Deuxième noeud \\
+\hline
+{\em screen} & Notre écran \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{visu_8cpp_a165d3a2b6f41d7f3d9b4e56e83c38caa}\label{visu_8cpp_a165d3a2b6f41d7f3d9b4e56e83c38caa}} 
+\index{visu.\+cpp@{visu.\+cpp}!test\+Inside@{test\+Inside}}
+\index{test\+Inside@{test\+Inside}!visu.\+cpp@{visu.\+cpp}}
+\subsubsection{\texorpdfstring{test\+Inside()}{testInside()}}
+{\footnotesize\ttfamily int test\+Inside (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen }\end{DoxyParamCaption})}
+
+
+
+Teste si le noeud est dans l\textquotesingle{}écran. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Position x du noeud \\
+\hline
+{\em y} & Position y du noeud \\
+\hline
+{\em screen} & Notre écran \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retourne 1 si le noeud est dans notre écran 
+\end{DoxyReturn}
+\mbox{\Hypertarget{visu_8cpp_abd0c5a20ad8a89156c20efda37a90f94}\label{visu_8cpp_abd0c5a20ad8a89156c20efda37a90f94}} 
+\index{visu.\+cpp@{visu.\+cpp}!vector\+Connexions@{vector\+Connexions}}
+\index{vector\+Connexions@{vector\+Connexions}!visu.\+cpp@{visu.\+cpp}}
+\subsubsection{\texorpdfstring{vector\+Connexions()}{vectorConnexions()}}
+{\footnotesize\ttfamily vector$<$int$>$ vector\+Connexions (\begin{DoxyParamCaption}\item[{int}]{nalea }\end{DoxyParamCaption})}
+
+
+
+Génère la position aléatoirement des noeuds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nalea} & Nombre de positions à généré \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retourne les valeurs aléatoire généré 
+\end{DoxyReturn}
+\mbox{\Hypertarget{visu_8cpp_a338fd44c440fbc64d7f372b5595be090}\label{visu_8cpp_a338fd44c440fbc64d7f372b5595be090}} 
+\index{visu.\+cpp@{visu.\+cpp}!visualisation@{visualisation}}
+\index{visualisation@{visualisation}!visu.\+cpp@{visu.\+cpp}}
+\subsubsection{\texorpdfstring{visualisation()}{visualisation()}}
+{\footnotesize\ttfamily void visualisation (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Surface $\ast$$\ast$}]{screen,  }\item[{vector$<$ \hyperlink{classnoeud}{noeud} $>$ $\ast$}]{g }\end{DoxyParamCaption})}
+
+
+
+Calcule et mise à jour de l\textquotesingle{}interface graphique. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen} & Notre écran \\
+\hline
+{\em g} & La liste des noeuds \\
+\hline
+\end{DoxyParams}

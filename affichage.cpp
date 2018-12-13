@@ -1,3 +1,8 @@
+/*!\file affichage.cpp
+ * \brief fichier d'affichage
+ * \author Aness MENAA
+ */
+
 #include <iostream>
 #include <vector>
 #include <string>
