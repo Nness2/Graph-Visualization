@@ -207,20 +207,7 @@ void afficheGraph (vector <noeud> graph, SDL_Surface* screen){
 void visualisation (SDL_Surface** screen, vector <noeud> *g){
   vector <noeud> graph = *g;
 
-  for (int x = 0 ; x < 30 ; x++){
-
-    for(int ww = 0 ; ww < 25 ; ww++){
-      for (int i=0;i<graph.size();i++){ 
-        for(int j=0;j<graph.size();j++){
-          if (i != j)
-            repultionProche(&graph[i],&graph[j], *screen);
-        }
-      }
-      afficheGraph(graph, *screen);
-      my_delay(7000);
-    }
-    /* boucle appliquant la répultion pour chaque paire de noeuds */
-
+  for (int x = 0 ; x < 10 ; x++){
     for(int ww = 0 ; ww < 20 ; ww++){
       for (int i=0;i<graph.size();i++){ 
         for(int j=0;j<graph.size();j++){
@@ -233,5 +220,18 @@ void visualisation (SDL_Surface** screen, vector <noeud> *g){
       afficheGraph(graph, *screen);
       my_delay(9000);
     }
+    for(int ww = 0 ; ww < 25 ; ww++){
+      for (int i=0;i<graph.size();i++){ 
+        for(int j=0;j<graph.size();j++){
+          if (i != j)
+            repultionProche(&graph[i],&graph[j], *screen);
+        }
+      }
+      afficheGraph(graph, *screen);
+      my_delay(7000);
+    }
+    /* boucle appliquant la répultion pour chaque paire de noeuds */
+
+
   }
 }
